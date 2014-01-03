@@ -1,6 +1,6 @@
 # Willow
 
-A Responsive theme for [Ghost](http://github.com/tryghost/ghost/).
+A Responsive theme for [Ghost](http://github.com/tryghost/ghost/). Willow is really just a fork of the [Casper](https://github.com/TryGhost/Casper) theme, tweaked to the way I want it to be. 
 
 ## Contributing
 
