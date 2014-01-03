@@ -8,11 +8,19 @@
     <div class="vertical">
         <div id="site-head-content" class="inner">
 
-            {{#if @blog.logo}}<a id="blog-logo" href="{{@blog.url}}"><img src="{{@blog.logo}}" alt="Blog Logo" /></a>{{/if}}
+<!--            {{#if @blog.logo}}<a id="blog-logo" href="{{@blog.url}}"><img src="{{@blog.logo}}" alt="Blog Logo" /></a>{{/if}} -->
             <h1 class="blog-title">{{@blog.title}}</h1>
             <h2 class="blog-description">{{@blog.description}}</h2>
         </div>
     </div>
+    
+    <div class="bottom">
+    	 <a href="https://twitter.com/lukevers_" class="twitter-follow-button" data-show-count="true" data-align="left" data-width="195px">Follow @lukevers_</a>
+	 <script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+'://platform.twitter.com/widgets.js';fjs.parentNode.insertBefore(js,fjs);}}(document, 'script', 'twitter-wjs');</script>
+	 <iframe src="http://ghbtns.com/github-btn.html?user=lukevers&type=follow&count=true" allowtransparency="true" frameborder="0" scrolling="0" width="150" height="20"></iframe>
+	 <script data-gittip-username="lukevers" data-gittip-widget="button" src="//gttp.co/v1.js"></script>
+    </div>    
+    
 </header>
 
 {{! The main content area on the homepage }}
@@ -23,7 +31,6 @@
 
     <article class="{{post_class}}">
         <header class="post-header">
-            <span class="post-meta"><time datetime="{{date format='YYYY-MM-DD'}}">{{date format="DD MMM YYYY"}}</time></span>
             <h2 class="post-title"><a href="{{url}}">{{{title}}}</a></h2>
 
         </header>
@@ -32,7 +39,9 @@
         </section>
 
 	<span class="post-meta tag">
-	      {{#if tags}}Tags: {{tags}}{{/if}}
+	      On
+	      <time datetime="{{date format='YYYY-MM-DD'}}">{{date format="DD MMM YYYY"}}</time>
+	      {{#if tags}}about {{tags}}{{/if}}
 	</span>
     </article>
 
