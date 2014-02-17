@@ -593,6 +593,11 @@ just for the lolz and stylepoints. */
     color: #50585D;
 }
 
+a.home {
+    text-decoration: none;
+    font-family: 'Helvetica Neue', Helvetica, sans-serif;
+    font-size: 14px;
+}
 
 /* ==========================================================================
    6. Third Party Elements - Embeds from other services
