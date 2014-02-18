@@ -628,12 +628,12 @@ a.home {
     margin: 4rem auto;
     font-family: 'Open Sans', sans-serif;
     font-size: 1.3rem;
-    color: #9EABB3;
+    color: #ccc;
     text-align: center;
 }
 
 .pagination a {
-    color: #9EABB3;
+    color: #ccc;
 }
 
 /* Push the previous/next links out to the left/right */
@@ -642,10 +642,10 @@ a.home {
     position: absolute;
     display: inline-block;
     padding: 0 15px;
-    border: #EBF2F6 2px solid;
+    border: #eee 2px solid;
     text-decoration: none;
     border-radius: 30px;
-    transition: border ease 0.3s;
+    transition: all ease 0.3s;
 }
 
 .older-posts {
@@ -664,7 +664,8 @@ a.home {
 
 .older-posts:hover,
 .newer-posts:hover {
-    border-color: #9EABB3;
+    border-color: #ccc;
+    color: #aaa;
 }
 
 
